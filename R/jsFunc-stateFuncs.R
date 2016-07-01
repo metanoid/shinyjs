@@ -75,24 +75,30 @@ NULL
 
 #' @export
 #' @rdname stateFuncs
+# nolint start
 enable <- function(id, selector) {
   fxn <- "enable"
   params <- as.list(match.call())[-1]
   jsFuncHelper(fxn, params)
 }
+# nolint end 
 
 #' @export
 #' @rdname stateFuncs
+# nolint start
 disable <- function(id, selector) {
   fxn <- "disable"
   params <- as.list(match.call())[-1]
   jsFuncHelper(fxn, params)
 }
+# nolint end 
 
 #' @export
 #' @rdname stateFuncs
+# nolint start
 toggleState <- function(id, condition, selector) {
   fxn <- "toggleState"
   params <- as.list(match.call())[-1]
   jsFuncHelper(fxn, params)
 }
+# nolint end 

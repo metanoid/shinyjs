@@ -81,24 +81,30 @@ NULL
 
 #' @export
 #' @rdname visibilityFuncs
+# nolint start
 show <- function(id, anim, animType, time, selector) {
   fxn <- "show"
   params <- as.list(match.call())[-1]
   jsFuncHelper(fxn, params)
 }
+# nolint end
 
 #' @export
 #' @rdname visibilityFuncs
+# nolint start
 hide <- function(id, anim, animType, time, selector) {
   fxn <- "hide"
   params <- as.list(match.call())[-1]
   jsFuncHelper(fxn, params)
 }
+# nolint end
 
 #' @export
 #' @rdname visibilityFuncs
+# nolint start
 toggle <- function(id, anim, animType, time, selector, condition) {
   fxn <- "toggle"
   params <- as.list(match.call())[-1]
   jsFuncHelper(fxn, params)
 }
+# nolint end
